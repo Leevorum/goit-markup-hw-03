@@ -58,6 +58,7 @@ p {
 }
 
 .nav-logo {
+  display: block;
   margin-right: 93px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -233,14 +234,14 @@ p {
   color: #ffffff99;
   font-style: normal;
 }
-.nav-logo {
-  display: block;
-  margin-bottom: 20px;
-}
+
 .footer-nav {
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--second-background-color);
+}
+.footer-margin {
+  margin-bottom: 20px;
 }
 .footer-logo {
   color: var(--mainbackground);
