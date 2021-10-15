@@ -226,7 +226,20 @@ p {
 }
 
 /* footer */
+.footer-links {
+  padding: 0;
+  margin: 0;
+  line-height: 1.71;
+  color: #ffffff99;
+  font-style: normal;
+}
+.nav-logo {
+  display: block;
+  margin-bottom: 20px;
+}
 .footer-nav {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: var(--second-background-color);
 }
 .footer-logo {
@@ -238,8 +251,6 @@ p {
   color: var(--mainbackground);
   font-style: normal;
 }
-.footer-links {
-  line-height: 1.71;
-  color: #ffffff99;
-  font-style: normal;
+.footer-contacts .item + .item {
+  margin-top: 9px;
 }
