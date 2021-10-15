@@ -114,6 +114,8 @@ p {
   text-align: center;
 }
 .hero-heading {
+  display: block;
+  margin-bottom: 30px;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
@@ -121,9 +123,14 @@ p {
   color: var(--mainbackground);
 }
 .hero-btn {
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 32px;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: var(--secondary-font-size);
   line-height: 1.87;
+  letter-spacing: 0.06em;
   cursor: pointer;
   background: var(--text-accent-color);
   color: var(--mainbackground);
@@ -136,6 +143,7 @@ p {
 
 /* advantages */
 .advantages-heading {
+  margin-bottom: 10px;
   font-size: var(--main-font-size);
   line-height: 1.1;
   text-transform: uppercase;
@@ -145,32 +153,50 @@ p {
   line-height: 1.71;
   color: var(--text-secondary-color);
 }
+.advantages .item + .item {
+  margin-left: 30px;
+}
 /* what we do */
 .section-heading {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+}
+.working .item + .item {
+  margin-left: 30px;
 }
 /* our team */
 .team-section {
   background: var(--third-background-color);
 }
 .team-heading {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: var(--secondary-font-size);
-  line-height: 1.17;
+  line-height: 1.172;
   text-align: center;
 }
 .team-text {
   font-size: var(--secondary-font-size);
-  line-height: 1.17;
+  line-height: 1.172;
   text-align: center;
   color: var(--text-secondary-color);
 }
-
+.team-list .item + .item {
+  margin-left: 30px;
+}
+.team-img {
+  display: block;
+}
+.card-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 /* portfolio */
 /* filter buttons */
 .btn {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: var(--secondary-font-size);
   line-height: 1.62;
