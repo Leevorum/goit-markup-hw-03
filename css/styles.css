@@ -9,11 +9,6 @@
   --third-background-color: #f5f4fa;
   --background-accent: #188ce8;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 body {
   padding: 0;
