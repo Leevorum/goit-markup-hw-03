@@ -28,10 +28,15 @@ p {
   padding: 0;
   margin: 0;
 }
+img {
+  display: block;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .flex {
   display: flex;
@@ -43,6 +48,9 @@ p {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.hidden {
+  visibility: hidden;
 }
 /* webstudio nav*/
 .header {
@@ -58,7 +66,7 @@ p {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: 1.173;
   color: var(--text-primary-color);
   text-decoration: none;
 }
@@ -108,13 +116,19 @@ p {
 .hero-section {
   background: var(--second-background-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-heading {
-  display: block;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
+  text-align: center;
   font-size: 44px;
   font-weight: 900;
-  line-height: 1.36;
+  line-height: 1.364;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--mainbackground);
 }
@@ -138,6 +152,9 @@ p {
 }
 
 /* advantages */
+.fix {
+  padding-bottom: 0;
+}
 .advantages-heading {
   margin-bottom: 10px;
   font-size: var(--main-font-size);
@@ -148,6 +165,9 @@ p {
   font-size: var(--main-font-size);
   line-height: 1.71;
   color: var(--text-secondary-color);
+}
+.advantages .item {
+  width: 270px;
 }
 .advantages .item + .item {
   margin-left: 30px;
@@ -179,15 +199,19 @@ p {
   text-align: center;
   color: var(--text-secondary-color);
 }
+.team-list .item {
+  width: 270px;
+}
 .team-list .item + .item {
   margin-left: 30px;
-}
-.team-img {
-  display: block;
 }
 .card-text {
   padding-top: 30px;
   padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: var(--mainbackground);
 }
 /* portfolio */
 /* filter buttons */
@@ -235,6 +259,7 @@ p {
   flex-wrap: wrap;
 }
 .works .item {
+  width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -277,6 +302,6 @@ p {
   color: var(--mainbackground);
   font-style: normal;
 }
-.footer-contacts .item + .item {
+.footer-contacts .item {
   margin-top: 9px;
 }
